@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience — Arpit Garg</title>
+<meta name="description" content="Arpit Garg — AI/ML Engineer. Machine learning, deep learning, computer vision and spiking neural networks.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- =================================================
+     LOADING SCREEN
+================================================= -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loading-inner">
+    <div class="loading-grid"></div>
+    <p class="loading-eyebrow">SYSTEM INITIALIZING</p>
+    <div class="loading-readout">
+      <span>DRIVER: <b>ARPIT GARG</b></span>
+      <span>ROLE: <b>AI/ML ENGINEER</b></span>
+      <span id="loading-status">STATUS: <b>WARMING UP</b></span>
+    </div>
+    <div class="loading-rpm">
+      <div class="rpm-bars" id="rpm-bars"></div>
+    </div>
+    <div class="loading-bar-wrap">
+      <span class="loading-car" id="loading-car" aria-hidden="true">🏎️</span>
+      <div class="loading-bar-track">
+        <div class="loading-bar-fill" id="loading-bar-fill"></div>
+      </div>
+    </div>
+    <div class="loading-pct-row">
+      <span class="loading-flag">ENGINE STARTING&hellip;</span>
+      <span class="loading-pct" id="loading-pct">0%</span>
+    </div>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true">
+  <div class="scroll-progress-fill" id="scroll-progress-fill"></div>
+  <span class="scroll-progress-car" id="scroll-progress-car">🏎️</span>
+</div>
+
+<!-- Custom cursor (desktop only) -->
+<div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- =================================================
+     NAVIGATION
+================================================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo" aria-label="Arpit Garg — home">
+      <span class="nav-logo-mark">AG</span>
+      <span class="nav-logo-text">ARPIT<em>GARG</em></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="experience.html" class="nav-link active">EXPERIENCE</a>
+      <a href="projects.html" class="nav-link">PROJECTS</a>
+      <a href="skills.html" class="nav-link">SKILLS</a>
+      <a href="achievements.html" class="nav-link">ACHIEVEMENTS</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+      <div class="nav-indicator" id="nav-indicator" aria-hidden="true"></div>
+    </nav>
+
+    <div class="navbar-right">
+      <div class="nav-lap-counter" aria-hidden="true">LAP 03/07</div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="experience" class="section experience" aria-label="Experience">
+  <div class="section-inner">
+    <p class="section-eyebrow">SECTOR 02 / RACE HISTORY</p>
+    <h2 class="section-title">Race History</h2>
+
+    <div class="race-timeline">
+      <div class="race-timeline-line" aria-hidden="true"><div class="race-timeline-fill" id="race-timeline-fill"></div></div>
+
+      <article class="race-card reveal">
+        <div class="race-marker" aria-hidden="true"><span>P1</span></div>
+        <div class="race-card-body">
+          <div class="race-card-head">
+            <div>
+              <h3>Research Intern &mdash; IIT Roorkee</h3>
+              <p class="race-track">Machine Learning Research &middot; Roorkee, India</p>
+            </div>
+            <span class="race-date">May 2026 &mdash; Jul 2026</span>
+          </div>
+          <ul class="race-highlights">
+            <li>Studied Spiking Neural Network architectures and surrogate-gradient learning.</li>
+            <li>Explored spike-based computation across 3 neuromorphic learning methodologies.</li>
+            <li>Designed a multi-class classification framework achieving approximately 70% accuracy.</li>
+            <li>Used separate hard and soft classifiers, selected based on prediction confidence.</li>
+          </ul>
+          <div class="race-telemetry">
+            <span>ACCURACY <b>~70%</b></span>
+            <span>METHODOLOGIES <b>3</b></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="race-card reveal">
+        <div class="race-marker" aria-hidden="true"><span>P2</span></div>
+        <div class="race-card-body">
+          <div class="race-card-head">
+            <div>
+              <h3>Summer Intern &mdash; Warship Design Bureau, Indian Navy</h3>
+              <p class="race-track">Project Management &amp; Systems Coordination &middot; New Delhi, India</p>
+            </div>
+            <span class="race-date">Jun 2026 &mdash; Jul 2026</span>
+          </div>
+          <ul class="race-highlights">
+            <li>Studied project planning and resource coordination across indigenous warship programs.</li>
+            <li>Worked across 5+ warship development programs, coordinating 6 multidisciplinary teams.</li>
+            <li>Covered electrical, weapon, navigation, communication, and underwater systems.</li>
+            <li>Analyzed dependencies and integration of 100+ equipment units.</li>
+          </ul>
+          <div class="race-telemetry">
+            <span>PROGRAMS <b>5+</b></span>
+            <span>TEAMS <b>6</b></span>
+            <span>UNITS <b>100+</b></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="race-card reveal">
+        <div class="race-marker" aria-hidden="true"><span>P3</span></div>
+        <div class="race-card-body">
+          <div class="race-card-head">
+            <div>
+              <h3>Research Intern &mdash; IIIT Delhi</h3>
+              <p class="race-track">Department of Computational Biology &middot; Delhi, India</p>
+            </div>
+            <span class="race-date">Jun 2025 &mdash; Aug 2025</span>
+          </div>
+          <ul class="race-highlights">
+            <li>Constructed predictive models using ECFP6 and GROVER molecular fingerprints.</li>
+            <li>Improved performance through feature engineering and hyperparameter optimization.</li>
+            <li>Analyzed 10,000+ protein&ndash;protein interaction samples.</li>
+            <li>Validated results using k-fold cross-validation and PR-curve benchmarking.</li>
+          </ul>
+          <div class="race-telemetry">
+            <span>SAMPLES <b>10,000+</b></span>
+            <span>VALIDATION <b>K-FOLD</b></span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer-tagline">Trained on curiosity, tuned by iteration.</p>
+</footer>
+
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arpit Garg — AI/ML Engineer</title>
+<meta name="description" content="Arpit Garg — AI/ML Engineer. Machine learning, deep learning, computer vision and spiking neural networks.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- =================================================
+     LOADING SCREEN
+================================================= -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loading-inner">
+    <div class="loading-grid"></div>
+    <p class="loading-eyebrow">SYSTEM INITIALIZING</p>
+    <div class="loading-readout">
+      <span>DRIVER: <b>ARPIT GARG</b></span>
+      <span>ROLE: <b>AI/ML ENGINEER</b></span>
+      <span id="loading-status">STATUS: <b>WARMING UP</b></span>
+    </div>
+    <div class="loading-rpm">
+      <div class="rpm-bars" id="rpm-bars"></div>
+    </div>
+    <div class="loading-bar-wrap">
+      <span class="loading-car" id="loading-car" aria-hidden="true">🏎️</span>
+      <div class="loading-bar-track">
+        <div class="loading-bar-fill" id="loading-bar-fill"></div>
+      </div>
+    </div>
+    <div class="loading-pct-row">
+      <span class="loading-flag">ENGINE STARTING&hellip;</span>
+      <span class="loading-pct" id="loading-pct">0%</span>
+    </div>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true">
+  <div class="scroll-progress-fill" id="scroll-progress-fill"></div>
+  <span class="scroll-progress-car" id="scroll-progress-car">🏎️</span>
+</div>
+
+<!-- Custom cursor (desktop only) -->
+<div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- =================================================
+     NAVIGATION
+================================================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo" aria-label="Arpit Garg — home">
+      <span class="nav-logo-mark">AG</span>
+      <span class="nav-logo-text">ARPIT<em>GARG</em></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-link active">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="experience.html" class="nav-link">EXPERIENCE</a>
+      <a href="projects.html" class="nav-link">PROJECTS</a>
+      <a href="skills.html" class="nav-link">SKILLS</a>
+      <a href="achievements.html" class="nav-link">ACHIEVEMENTS</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+      <div class="nav-indicator" id="nav-indicator" aria-hidden="true"></div>
+    </nav>
+
+    <div class="navbar-right">
+      <div class="nav-lap-counter" aria-hidden="true">LAP 01/07</div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="hero" class="hero" aria-label="Introduction">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="carbon-texture"></div>
+    <div class="grid-lines"></div>
+    <div class="track-lines"></div>
+    <div class="speed-lines" id="speed-lines"></div>
+  </div>
+
+  <div class="hero-hud" aria-hidden="true">
+    <div class="hud-item hud-tl">
+      <span class="hud-label">RPM</span>
+      <span class="hud-value" id="hud-rpm">0</span>
+    </div>
+    <div class="hud-item hud-tr">
+      <span class="hud-label">SYSTEM</span>
+      <span class="hud-value hud-online">ONLINE</span>
+    </div>
+    <div class="hud-item hud-bl">
+      <span class="hud-label">SPEED</span>
+      <span class="hud-value" id="hud-speed">0<small>KM/H</small></span>
+    </div>
+    <div class="hud-item hud-br">
+      <span class="hud-label">MODE</span>
+      <span class="hud-value">PERFORMANCE</span>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow"><span class="dot"></span><span class="hero-eyebrow-emoji" aria-hidden="true">🏎️</span>LAP 01 / PORTFOLIO — STARTING GRID</p>
+    <h1 class="hero-title">
+      <span class="hero-title-name">ARPIT GARG</span>
+      <span class="hero-title-role">AI/ML ENGINEER</span>
+    </h1>
+    <p class="hero-tagline">Engineering intelligence at full speed.</p>
+
+    <div class="hero-actions">
+      <a href="projects.html" class="btn btn-primary">
+        <span>VIEW MY WORK</span>
+      </a>
+      <!-- To go live: replace YOUR_FILE_ID below with your Google Drive file's ID.
+           Get it from Drive: right-click the PDF → Share → "Copy link", which gives
+           you something like https://drive.google.com/file/d/1AbCdEfGhIj/view?usp=sharing
+           — the long string between /d/ and /view is the file ID. Also make sure the
+           file's sharing setting is "Anyone with the link" or it'll 403 for visitors. -->
+      <a href="https://drive.google.com/file/d/1xvyuYS0cLD3uFlOE4SYVfZgwroOOfbdb/view?usp=sharing" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+        <span>DOWNLOAD RESUME</span>
+      </a>
+      <a href="contact.html" class="btn btn-ghost">
+        <span>CONTACT ME</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-car" id="hero-car" aria-hidden="true">
+    <!-- Interactive top-down F1 car built with SVG -->
+    <svg viewBox="0 0 400 800" class="f1-car-svg" id="f1-car-svg">
+      <defs>
+        <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#151515"/>
+          <stop offset="50%" stop-color="#0D0D0D"/>
+          <stop offset="100%" stop-color="#151515"/>
+        </linearGradient>
+        <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#FF1E1E" stop-opacity="0.9"/>
+          <stop offset="100%" stop-color="#FF1E1E" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- rear wing -->
+      <rect x="90" y="40" width="220" height="16" rx="4" fill="url(#bodyGrad)" stroke="#E10600" stroke-width="1.5"/>
+      <rect x="140" y="56" width="10" height="30" fill="#151515"/>
+      <rect x="250" y="56" width="10" height="30" fill="#151515"/>
+
+      <!-- rear tires -->
+      <rect x="55" y="90" width="42" height="90" rx="10" fill="#0D0D0D" stroke="#333" stroke-width="2"/>
+      <rect x="303" y="90" width="42" height="90" rx="10" fill="#0D0D0D" stroke="#333" stroke-width="2"/>
+
+      <!-- main body -->
+      <path d="M170 90 C130 95 120 160 128 260 C132 380 140 480 160 560 C168 610 180 660 200 700 C220 660 232 610 240 560 C260 480 268 380 272 260 C280 160 270 95 230 90 C215 84 185 84 170 90 Z"
+            fill="url(#bodyGrad)" stroke="#E10600" stroke-width="1.5"/>
+
+      <!-- halo / cockpit -->
+      <ellipse cx="200" cy="230" rx="34" ry="46" fill="#050505" stroke="#A0A0A0" stroke-width="1.5"/>
+      <path d="M170 200 Q200 180 230 200" fill="none" stroke="#E10600" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- red racing stripe -->
+      <rect x="192" y="90" width="16" height="600" fill="#E10600" opacity="0.85"/>
+
+      <!-- front tires -->
+      <rect x="70" y="620" width="40" height="86" rx="10" fill="#0D0D0D" stroke="#333" stroke-width="2"/>
+      <rect x="290" y="620" width="40" height="86" rx="10" fill="#0D0D0D" stroke="#333" stroke-width="2"/>
+
+      <!-- front wing -->
+      <rect x="80" y="720" width="240" height="18" rx="4" fill="url(#bodyGrad)" stroke="#E10600" stroke-width="1.5"/>
+
+      <!-- headlight glow points -->
+      <circle cx="170" cy="705" r="18" fill="url(#glowGrad)" class="headlight-glow"/>
+      <circle cx="230" cy="705" r="18" fill="url(#glowGrad)" class="headlight-glow"/>
+    </svg>
+
+    <div class="car-telemetry" aria-hidden="true">
+      <div class="car-telemetry-line" style="--i:0">MODEL &mdash; INTELLIGENCE.01</div>
+      <div class="car-telemetry-line" style="--i:1">STACK &mdash; PYTORCH / TENSORFLOW</div>
+      <div class="car-telemetry-line" style="--i:2">STATUS &mdash; RACE READY</div>
+    </div>
+  </div>
+
+  <a href="about.html" class="scroll-cue" aria-label="Continue to About page">
+    <span>EXPLORE</span>
+    <span class="scroll-cue-car" aria-hidden="true">🏎️</span>
+  </a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer-tagline">Trained on curiosity, tuned by iteration.</p>
+</footer>
+
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

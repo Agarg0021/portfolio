@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Arpit Garg</title>
+<meta name="description" content="Arpit Garg — AI/ML Engineer. Machine learning, deep learning, computer vision and spiking neural networks.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- =================================================
+     LOADING SCREEN
+================================================= -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loading-inner">
+    <div class="loading-grid"></div>
+    <p class="loading-eyebrow">SYSTEM INITIALIZING</p>
+    <div class="loading-readout">
+      <span>DRIVER: <b>ARPIT GARG</b></span>
+      <span>ROLE: <b>AI/ML ENGINEER</b></span>
+      <span id="loading-status">STATUS: <b>WARMING UP</b></span>
+    </div>
+    <div class="loading-rpm">
+      <div class="rpm-bars" id="rpm-bars"></div>
+    </div>
+    <div class="loading-bar-wrap">
+      <span class="loading-car" id="loading-car" aria-hidden="true">🏎️</span>
+      <div class="loading-bar-track">
+        <div class="loading-bar-fill" id="loading-bar-fill"></div>
+      </div>
+    </div>
+    <div class="loading-pct-row">
+      <span class="loading-flag">ENGINE STARTING&hellip;</span>
+      <span class="loading-pct" id="loading-pct">0%</span>
+    </div>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true">
+  <div class="scroll-progress-fill" id="scroll-progress-fill"></div>
+  <span class="scroll-progress-car" id="scroll-progress-car">🏎️</span>
+</div>
+
+<!-- Custom cursor (desktop only) -->
+<div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- =================================================
+     NAVIGATION
+================================================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo" aria-label="Arpit Garg — home">
+      <span class="nav-logo-mark">AG</span>
+      <span class="nav-logo-text">ARPIT<em>GARG</em></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="experience.html" class="nav-link">EXPERIENCE</a>
+      <a href="projects.html" class="nav-link active">PROJECTS</a>
+      <a href="skills.html" class="nav-link">SKILLS</a>
+      <a href="achievements.html" class="nav-link">ACHIEVEMENTS</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+      <div class="nav-indicator" id="nav-indicator" aria-hidden="true"></div>
+    </nav>
+
+    <div class="navbar-right">
+      <div class="nav-lap-counter" aria-hidden="true">LAP 04/07</div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="projects" class="section projects" aria-label="Projects">
+  <div class="section-inner">
+    <p class="section-eyebrow">SECTOR 03 / ENGINEERING GARAGE</p>
+    <h2 class="section-title">Engineering Garage</h2>
+
+    <div class="garage-grid">
+
+      <!-- Project 1: Handwriting Synthesis -->
+      <article class="garage-card reveal" data-project="handwriting">
+        <div class="garage-card-top">
+          <span class="garage-bay">BAY 01</span>
+          <span class="garage-date">Jan 2026 &mdash; Feb 2026</span>
+        </div>
+        <h3>Handwriting Synthesis using RNNs</h3>
+        <p class="garage-desc">LSTM-based sequence-to-sequence model that synthesizes handwritten strokes, with a full preprocessing and visualization pipeline.</p>
+
+        <div class="garage-visual" aria-hidden="true">
+          <svg viewBox="0 0 300 80" class="handwriting-svg">
+            <path id="handwriting-path" d="M10,50 Q30,10 50,50 T90,50 Q110,10 130,50 T170,50 Q190,15 210,50 T250,50 Q270,20 290,50" />
+          </svg>
+        </div>
+
+        <ul class="chip-list small">
+          <li>LSTM</li><li>Sequence-to-Sequence</li><li>Deep Learning</li>
+        </ul>
+        <ul class="garage-highlights">
+          <li>Achieved approximately 82% accuracy.</li>
+          <li>Evaluated across 500+ validation sequences.</li>
+        </ul>
+        <div class="garage-actions">
+          <a href="#" class="btn-icon" aria-label="View source on GitHub">GITHUB</a>
+          <a href="#" class="btn-icon" aria-label="View live demo">LIVE DEMO</a>
+        </div>
+      </article>
+
+      <!-- Project 2: Image Captioning -->
+      <article class="garage-card reveal" data-project="captioning">
+        <div class="garage-card-top">
+          <span class="garage-bay">BAY 02</span>
+          <span class="garage-date">Nov 2025 &mdash; Dec 2025</span>
+        </div>
+        <h3>Image Captioning using Deep Learning</h3>
+        <p class="garage-desc">CNN&ndash;LSTM pipeline trained on ~8,000 images, combining convolutional feature extraction with recurrent caption generation.</p>
+
+        <div class="garage-visual pipeline-visual" aria-hidden="true">
+          <div class="pipeline-stage"><span>IMAGE</span></div>
+          <span class="pipeline-arrow">&rarr;</span>
+          <div class="pipeline-stage"><span>CNN</span></div>
+          <span class="pipeline-arrow">&rarr;</span>
+          <div class="pipeline-stage"><span>VECTOR</span></div>
+          <span class="pipeline-arrow">&rarr;</span>
+          <div class="pipeline-stage"><span>LSTM</span></div>
+          <span class="pipeline-arrow">&rarr;</span>
+          <div class="pipeline-stage highlight"><span>CAPTION</span></div>
+        </div>
+
+        <ul class="chip-list small">
+          <li>CNN</li><li>LSTM</li><li>TensorFlow</li><li>Keras</li>
+        </ul>
+        <ul class="garage-highlights">
+          <li>Built a 5-stage preprocessing and caption generation workflow.</li>
+          <li>Achieved a BLEU-4 score of 0.34.</li>
+        </ul>
+        <div class="garage-actions">
+          <a href="#" class="btn-icon" aria-label="View source on GitHub">GITHUB</a>
+          <a href="#" class="btn-icon" aria-label="View live demo">LIVE DEMO</a>
+        </div>
+      </article>
+
+      <!-- Project 3: FitBudd -->
+      <article class="garage-card reveal" data-project="fitbudd">
+        <div class="garage-card-top">
+          <span class="garage-bay">BAY 03</span>
+          <span class="garage-date">Jun 2025 &mdash; Aug 2025</span>
+        </div>
+        <h3>FitBudd &mdash; AI Fitness Assistant</h3>
+        <p class="garage-desc">Real-time posture estimation and exercise analysis built on MediaPipe Pose, tracking 33 body keypoints.</p>
+
+        <div class="garage-visual" aria-hidden="true">
+          <svg viewBox="0 0 200 160" class="skeleton-svg" id="skeleton-svg">
+            <line x1="100" y1="30" x2="100" y2="80" class="skeleton-bone"/>
+            <line x1="100" y1="45" x2="65" y2="70" class="skeleton-bone"/>
+            <line x1="100" y1="45" x2="135" y2="70" class="skeleton-bone"/>
+            <line x1="100" y1="80" x2="75" y2="120" class="skeleton-bone"/>
+            <line x1="100" y1="80" x2="125" y2="120" class="skeleton-bone"/>
+            <line x1="75" y1="120" x2="70" y2="150" class="skeleton-bone"/>
+            <line x1="125" y1="120" x2="130" y2="150" class="skeleton-bone"/>
+            <circle cx="100" cy="20" r="12" class="skeleton-joint"/>
+            <circle cx="100" cy="45" r="4" class="skeleton-joint"/>
+            <circle cx="65" cy="70" r="4" class="skeleton-joint"/>
+            <circle cx="135" cy="70" r="4" class="skeleton-joint"/>
+            <circle cx="100" cy="80" r="4" class="skeleton-joint"/>
+            <circle cx="75" cy="120" r="4" class="skeleton-joint"/>
+            <circle cx="125" cy="120" r="4" class="skeleton-joint"/>
+            <circle cx="70" cy="150" r="4" class="skeleton-joint"/>
+            <circle cx="130" cy="150" r="4" class="skeleton-joint"/>
+          </svg>
+        </div>
+
+        <ul class="chip-list small">
+          <li>Python</li><li>MediaPipe</li><li>OpenCV</li><li>TensorFlow</li>
+        </ul>
+        <ul class="garage-highlights">
+          <li>Joint-angle computation and motion velocity estimation.</li>
+          <li>Reduced pose estimation noise by ~20%. Supports 18+ exercise types.</li>
+        </ul>
+        <div class="garage-actions">
+          <a href="#" class="btn-icon" aria-label="View source on GitHub">GITHUB</a>
+          <a href="#" class="btn-icon" aria-label="View live demo">LIVE DEMO</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer-tagline">Trained on curiosity, tuned by iteration.</p>
+</footer>
+
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

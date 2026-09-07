@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills — Arpit Garg</title>
+<meta name="description" content="Arpit Garg — AI/ML Engineer. Machine learning, deep learning, computer vision and spiking neural networks.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- =================================================
+     LOADING SCREEN
+================================================= -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loading-inner">
+    <div class="loading-grid"></div>
+    <p class="loading-eyebrow">SYSTEM INITIALIZING</p>
+    <div class="loading-readout">
+      <span>DRIVER: <b>ARPIT GARG</b></span>
+      <span>ROLE: <b>AI/ML ENGINEER</b></span>
+      <span id="loading-status">STATUS: <b>WARMING UP</b></span>
+    </div>
+    <div class="loading-rpm">
+      <div class="rpm-bars" id="rpm-bars"></div>
+    </div>
+    <div class="loading-bar-wrap">
+      <span class="loading-car" id="loading-car" aria-hidden="true">🏎️</span>
+      <div class="loading-bar-track">
+        <div class="loading-bar-fill" id="loading-bar-fill"></div>
+      </div>
+    </div>
+    <div class="loading-pct-row">
+      <span class="loading-flag">ENGINE STARTING&hellip;</span>
+      <span class="loading-pct" id="loading-pct">0%</span>
+    </div>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true">
+  <div class="scroll-progress-fill" id="scroll-progress-fill"></div>
+  <span class="scroll-progress-car" id="scroll-progress-car">🏎️</span>
+</div>
+
+<!-- Custom cursor (desktop only) -->
+<div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- =================================================
+     NAVIGATION
+================================================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo" aria-label="Arpit Garg — home">
+      <span class="nav-logo-mark">AG</span>
+      <span class="nav-logo-text">ARPIT<em>GARG</em></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="experience.html" class="nav-link">EXPERIENCE</a>
+      <a href="projects.html" class="nav-link">PROJECTS</a>
+      <a href="skills.html" class="nav-link active">SKILLS</a>
+      <a href="achievements.html" class="nav-link">ACHIEVEMENTS</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+      <div class="nav-indicator" id="nav-indicator" aria-hidden="true"></div>
+    </nav>
+
+    <div class="navbar-right">
+      <div class="nav-lap-counter" aria-hidden="true">LAP 05/07</div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="skills" class="section skills" aria-label="Skills">
+  <div class="section-inner">
+    <p class="section-eyebrow">SECTOR 04 / PERFORMANCE TELEMETRY</p>
+    <h2 class="section-title">Performance Telemetry</h2>
+    <p class="skills-note">Categories represent applied experience, not exact proficiency metrics.</p>
+
+    <div class="telemetry-dash">
+
+      <div class="telemetry-cluster reveal">
+        <h3 class="cluster-title"><span class="cluster-dot"></span>Programming</h3>
+        <div class="chip-list telemetry-chips">
+          <span>Python</span><span>C++</span><span>C</span><span>JavaScript</span><span>SQL</span><span>HTML</span><span>CSS</span>
+        </div>
+      </div>
+
+      <div class="telemetry-cluster reveal">
+        <h3 class="cluster-title"><span class="cluster-dot"></span>Machine Learning</h3>
+        <div class="chip-list telemetry-chips">
+          <span>Supervised Learning</span><span>Classification</span><span>Regression</span><span>Feature Engineering</span><span>Model Evaluation</span><span>Hyperparameter Optimization</span><span>Cross-Validation</span><span>Ensemble Learning</span>
+        </div>
+      </div>
+
+      <div class="telemetry-cluster reveal">
+        <h3 class="cluster-title"><span class="cluster-dot"></span>Deep Learning</h3>
+        <div class="chip-list telemetry-chips">
+          <span>ANN</span><span>CNN</span><span>RNN</span><span>LSTM</span><span>SNN</span><span>GNN</span><span>Seq2Seq</span><span>Transfer Learning</span>
+        </div>
+      </div>
+
+      <div class="telemetry-cluster reveal">
+        <h3 class="cluster-title"><span class="cluster-dot"></span>Frameworks</h3>
+        <div class="chip-list telemetry-chips">
+          <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>SpikingJelly</span>
+        </div>
+      </div>
+
+      <div class="telemetry-cluster reveal">
+        <h3 class="cluster-title"><span class="cluster-dot"></span>Data Science</h3>
+        <div class="chip-list telemetry-chips">
+          <span>NumPy</span><span>Pandas</span><span>SciPy</span><span>Matplotlib</span><span>Data Preprocessing</span><span>EDA</span>
+        </div>
+      </div>
+
+      <div class="telemetry-cluster reveal">
+        <h3 class="cluster-title"><span class="cluster-dot"></span>Tools &amp; Platforms</h3>
+        <div class="chip-list telemetry-chips">
+          <span>Git</span><span>GitHub</span><span>Jupyter</span><span>Google Colab</span><span>VS Code</span><span>Docker</span><span>Linux</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Radar gauge cluster -->
+    <div class="gauge-row reveal" id="gauge-row">
+      <div class="gauge" data-value="90">
+        <svg viewBox="0 0 120 120"><circle class="gauge-track" cx="60" cy="60" r="52"/><circle class="gauge-fill" cx="60" cy="60" r="52"/></svg>
+        <span class="gauge-label">DEEP<br>LEARNING</span>
+      </div>
+      <div class="gauge" data-value="85">
+        <svg viewBox="0 0 120 120"><circle class="gauge-track" cx="60" cy="60" r="52"/><circle class="gauge-fill" cx="60" cy="60" r="52"/></svg>
+        <span class="gauge-label">COMPUTER<br>VISION</span>
+      </div>
+      <div class="gauge" data-value="80">
+        <svg viewBox="0 0 120 120"><circle class="gauge-track" cx="60" cy="60" r="52"/><circle class="gauge-fill" cx="60" cy="60" r="52"/></svg>
+        <span class="gauge-label">PYTHON<br>ENGINEERING</span>
+      </div>
+      <div class="gauge" data-value="75">
+        <svg viewBox="0 0 120 120"><circle class="gauge-track" cx="60" cy="60" r="52"/><circle class="gauge-fill" cx="60" cy="60" r="52"/></svg>
+        <span class="gauge-label">RESEARCH<br>&amp; ANALYSIS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer-tagline">Trained on curiosity, tuned by iteration.</p>
+</footer>
+
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

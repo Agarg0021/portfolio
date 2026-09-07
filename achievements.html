@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Achievements — Arpit Garg</title>
+<meta name="description" content="Arpit Garg — AI/ML Engineer. Machine learning, deep learning, computer vision and spiking neural networks.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- =================================================
+     LOADING SCREEN
+================================================= -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loading-inner">
+    <div class="loading-grid"></div>
+    <p class="loading-eyebrow">SYSTEM INITIALIZING</p>
+    <div class="loading-readout">
+      <span>DRIVER: <b>ARPIT GARG</b></span>
+      <span>ROLE: <b>AI/ML ENGINEER</b></span>
+      <span id="loading-status">STATUS: <b>WARMING UP</b></span>
+    </div>
+    <div class="loading-rpm">
+      <div class="rpm-bars" id="rpm-bars"></div>
+    </div>
+    <div class="loading-bar-wrap">
+      <span class="loading-car" id="loading-car" aria-hidden="true">🏎️</span>
+      <div class="loading-bar-track">
+        <div class="loading-bar-fill" id="loading-bar-fill"></div>
+      </div>
+    </div>
+    <div class="loading-pct-row">
+      <span class="loading-flag">ENGINE STARTING&hellip;</span>
+      <span class="loading-pct" id="loading-pct">0%</span>
+    </div>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true">
+  <div class="scroll-progress-fill" id="scroll-progress-fill"></div>
+  <span class="scroll-progress-car" id="scroll-progress-car">🏎️</span>
+</div>
+
+<!-- Custom cursor (desktop only) -->
+<div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- =================================================
+     NAVIGATION
+================================================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo" aria-label="Arpit Garg — home">
+      <span class="nav-logo-mark">AG</span>
+      <span class="nav-logo-text">ARPIT<em>GARG</em></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="experience.html" class="nav-link">EXPERIENCE</a>
+      <a href="projects.html" class="nav-link">PROJECTS</a>
+      <a href="skills.html" class="nav-link">SKILLS</a>
+      <a href="achievements.html" class="nav-link active">ACHIEVEMENTS</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+      <div class="nav-indicator" id="nav-indicator" aria-hidden="true"></div>
+    </nav>
+
+    <div class="navbar-right">
+      <div class="nav-lap-counter" aria-hidden="true">LAP 06/07</div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="achievements" class="section achievements" aria-label="Achievements">
+  <div class="section-inner">
+    <p class="section-eyebrow">SECTOR 05 / PODIUM</p>
+    <h2 class="section-title">Podium</h2>
+
+    <div class="podium reveal">
+      <div class="podium-place place-2">
+        <div class="podium-medal">🏁</div>
+        <h3>Smart India Hackathon 2025</h3>
+        <p class="podium-org">Shortlisted (Waitlist) &mdash; Project PeerFit</p>
+        <p class="podium-desc">Selected among 600+ shortlisted national teams based on technical proposal.</p>
+        <div class="podium-block"><span>P2</span></div>
+      </div>
+
+      <div class="podium-place place-1">
+        <div class="podium-medal">🥈</div>
+        <h3>Code or Die Hackathon</h3>
+        <p class="podium-org">Delhi Technological University</p>
+        <p class="podium-desc">2nd Place &mdash; implemented a software solution under hackathon constraints.</p>
+        <div class="podium-block"><span>P1</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="leadership" class="section leadership" aria-label="Leadership">
+  <div class="section-inner">
+    <p class="section-eyebrow">SECTOR 06 / PIT WALL</p>
+    <h2 class="section-title">Team Radio &mdash; Pit Wall</h2>
+
+    <div class="pitwall-grid">
+      <article class="pitwall-card reveal">
+        <p class="pitwall-tag">STRATEGY CALL</p>
+        <h3>Finance Head &mdash; Training and Placement Cell</h3>
+        <span class="pitwall-date">Aug 2026 &mdash; Present</span>
+        <ul class="race-highlights">
+          <li>Handled a budget exceeding INR 60 lakh.</li>
+          <li>Managed expense tracking, fund allocation, and financial planning.</li>
+          <li>Supported placement-related activities and recruitment operations.</li>
+        </ul>
+      </article>
+
+      <article class="pitwall-card reveal">
+        <p class="pitwall-tag">STRATEGY CALL</p>
+        <h3>Joint Treasurer &mdash; IEEE Student Branch</h3>
+        <span class="pitwall-date">Jan 2026 &mdash; Present</span>
+        <ul class="race-highlights">
+          <li>Oversaw budgeting, fund allocation, and expense tracking.</li>
+          <li>Supported 6+ student technical activities and events.</li>
+        </ul>
+      </article>
+
+      <article class="pitwall-card reveal">
+        <p class="pitwall-tag">PIT CREW</p>
+        <h3>Volunteer &mdash; NVIDIA Community Meetup</h3>
+        <span class="pitwall-date">October 2025</span>
+        <ul class="race-highlights">
+          <li>Supported event coordination, participant registration, and logistics.</li>
+          <li>Assisted technical event operations for 1,500+ attendees.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="site-footer-tagline">Trained on curiosity, tuned by iteration.</p>
+</footer>
+
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
