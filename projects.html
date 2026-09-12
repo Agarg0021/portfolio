@@ -95,31 +95,33 @@
 
     <div class="garage-grid">
 
-      <!-- Project 1: Handwriting Synthesis -->
-      <article class="garage-card reveal" data-project="handwriting">
+           <!-- Project 1: Weather Data Pipeline -->
+      <article class="garage-card reveal" data-project="weather-pipeline">
         <div class="garage-card-top">
           <span class="garage-bay">BAY 01</span>
-          <span class="garage-date">Jan 2026 &mdash; Feb 2026</span>
+          <span class="garage-date">Sep 2026</span>
         </div>
-        <h3>Handwriting Synthesis using RNNs</h3>
-        <p class="garage-desc">LSTM-based sequence-to-sequence model that synthesizes handwritten strokes, with a full preprocessing and visualization pipeline.</p>
+        <h3>Weather Data Pipeline &amp; Dashboard</h3>
+        <p class="garage-desc">An automated ETL pipeline that ingests live weather data hourly, transforms it with SQL, and surfaces it through an interactive dashboard with real-time pipeline health monitoring.</p>
 
         <div class="garage-visual" aria-hidden="true">
           <svg viewBox="0 0 300 80" class="handwriting-svg">
-            <path id="handwriting-path" d="M10,50 Q30,10 50,50 T90,50 Q110,10 130,50 T170,50 Q190,15 210,50 T250,50 Q270,20 290,50" />
+            <path id="weather-path" d="M10,60 L10,40 Q10,30 20,30 L50,30 Q55,15 70,15 Q85,15 90,30 L230,30 Q245,30 245,45 Q245,60 230,60 Z" />
+            <circle cx="70" cy="15" r="3" />
+            <path d="M40,65 L40,72 M60,65 L60,72 M80,65 L80,72 M100,65 L100,72" stroke-linecap="round" />
           </svg>
         </div>
 
         <ul class="chip-list small">
-          <li>LSTM</li><li>Sequence-to-Sequence</li><li>Deep Learning</li>
+          <li>Python</li><li>SQL</li><li>Streamlit</li><li>SQLite</li>
         </ul>
         <ul class="garage-highlights">
-          <li>Achieved approximately 82% accuracy.</li>
-          <li>Evaluated across 500+ validation sequences.</li>
+          <li>Collects data hourly across 5 global cities via cron-scheduled ingestion.</li>
+          <li>Built a data-quality flag system and live pipeline health monitor to track freshness and completeness.</li>
         </ul>
         <div class="garage-actions">
-          <a href="#" class="btn-icon" aria-label="View source on GitHub">GITHUB</a>
-          <a href="#" class="btn-icon" aria-label="View live demo">LIVE DEMO</a>
+          <a href="https://github.com/Agarg0021/weather-pipeline" class="btn-icon" aria-label="View source on GitHub">GITHUB</a>
+          <a href="https://weather-pipeline-4b6nvp2hqqe5scptskotke.streamlit.app" class="btn-icon" aria-label="View live demo">LIVE DEMO</a>
         </div>
       </article>
 
